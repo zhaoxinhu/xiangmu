@@ -1,0 +1,3 @@
+org\springboot\manager\service\dubbo\DubboServerConfig.class
+org\springboot\manager\service\TestStartService.class
+org\springboot\manager\service\impl\UserManagerServiceImpl.class

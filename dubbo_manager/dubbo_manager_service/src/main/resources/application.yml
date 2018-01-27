@@ -1,0 +1,30 @@
+spring:
+  datasource:
+    druid:
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://192.168.41.130:3306/springboot?allowMultiQueries=true&amp;useUnicode=true&amp;characterEncoding=utf-8
+      username: root
+      password: 1234
+      initial-size: 2
+      max-active: 50
+      min-idle: 1
+      max-wait: 60000
+      test-on-borrow: false
+      test-on-return: false
+      test-while-idle: true
+      time-between-eviction-runs-millis: 60000
+      min-evictable-idle-time-millis: 25200000
+      remove-abandoned: true
+      remove-abandoned-timeout: 1800
+      log-abandoned: true
+      pool-prepared-statements: true
+      max-pool-prepared-statement-per-connection-size: 20
+      filters: stat, wall, log4j, config
+mybatis:
+  mapper-locations: classpath*:/mapper/*.xml
+  type-aliases-package: org.springboot.manager.pojo
+  configuration:
+    lazy-loading-enabled: false
+  configuration-properties: dialect=mysql
+server:
+  port: 8080

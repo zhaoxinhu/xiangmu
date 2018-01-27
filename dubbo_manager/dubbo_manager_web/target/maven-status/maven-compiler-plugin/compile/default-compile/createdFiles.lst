@@ -1,0 +1,3 @@
+org\springboot\manager\controller\UserController.class
+org\springboot\manager\TestStartMain.class
+org\springboot\manager\dubbo\DubboConfig.class
