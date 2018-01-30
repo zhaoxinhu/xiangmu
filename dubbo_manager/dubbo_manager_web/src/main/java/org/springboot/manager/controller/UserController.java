@@ -19,10 +19,10 @@ public class UserController {
     @ResponseBody
     public User getUser(){
 
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("请输入一个字符串：");
-        String print = scanner.nextLine();
-        System.out.println("用户输入了：" + print);
+        //Scanner scanner = new Scanner(System.in);
+        //System.out.println("请输入一个字符串：");
+        //String print = scanner.nextLine();
+        //System.out.println("用户输入了：" + print);
 
         return userManagerService.getUser();
     }
